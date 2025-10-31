@@ -1,0 +1,22 @@
+name: React Workflow
+
+on:
+  push:
+    branches: [ main ]
+jobs:
+  set-up-react:
+    runs-on: ubantu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
+      - name: Setup nodejs
+        uses: actions/setup-node@v6.0.0
+        with:
+          node-version: 22.x
+      - name: Install dependency
+        run: npm install 
+      - name: Build
+        run: npm run build
+            
+            
+      
