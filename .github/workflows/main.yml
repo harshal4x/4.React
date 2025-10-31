@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
 jobs:
-  set-up-react:
+  flow1:
     runs-on: ubantu-latest
     steps:
       - name: first task
