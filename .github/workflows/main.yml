@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v5.0.0
         with: 
           name: React-artifacts 
-          path: dist/
+          path: ./dist
         
             
             
