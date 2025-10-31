@@ -27,8 +27,7 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click Me now
-        Hey
-        ok
+        specific file
       </p>
     </>
   )
