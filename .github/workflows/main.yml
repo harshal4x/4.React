@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 20.x
       - name: Install dependency
-        run: npm install
+        run: cd 4.React && npm install
       - name: Build
         run: npm run build
             
