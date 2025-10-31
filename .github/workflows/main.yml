@@ -8,12 +8,14 @@ jobs:
     steps:
       - name: first task
         run: echo "start successfully"
+      - name: checkout
+        uses: actions/checkout@v5.0.0
       - name: Node setup
         uses: actions/setup-node@v6.0.0
         with:
           node-version: 20.x
       - name: Install dependency
-        run: cd 4.React && npm install
+        run:  npm install
       - name: Build
         run: npm run build
             
