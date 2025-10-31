@@ -5,6 +5,9 @@ on:
 jobs:
   demo:
     runs-on: ubuntu-latest
+    concurrency:
+      group: react-concurrency
+      cancel-in-progress: true
     steps:
       - name: first task
         run: echo "start successfully"
