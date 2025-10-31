@@ -3,8 +3,8 @@ on:
   push:
     branches: [ main ]
 jobs:
-  flow1:
-    runs-on: ubantu-latest
+  demo:
+    runs-on: ubuntu-latest
     steps:
       - name: first task
         run: echo "start successfully"
